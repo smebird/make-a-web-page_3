@@ -1,0 +1,242 @@
+/*This is the CSS for my first webpage made during 
+my Udacity course, "Introduction to Programming"*/
+*{ 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* I have created three main backgrounds
+that alternate with each new section. 
+
+This selector sets the overall form that 
+will be used in every section */
+
+.Section1, .Section2, .Section3 {
+	
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	overflow: hidden;
+
+}
+
+.LessScreen {
+	max-width: 70%;
+}
+
+.FullScreen {
+	max-width: 100%;
+}
+
+
+
+/* The three selectors here change the
+background color of each section*/
+
+.Section1Clr {
+
+	background-color: #7C8B88;
+	
+}
+
+.Section2Clr {
+	background-color: #847C8B;
+	
+}
+.Section3Clr {
+	background-color: #797EB3;
+}
+
+.TopContents, BottomContents {
+	max-width: 100%;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+.AtLeft {
+	padding-right: 10px;
+	float: left;
+	max-width: 50%;
+}
+
+.AtRight {
+	padding-right: 10px;
+	float: right;
+	max-width: 50%;
+}
+.AtBottom {
+	float: left;
+	padding-right: 10px;
+	max-width: 100%;
+}
+
+h1 {
+	font-family: Georgia;
+	text-align: center;
+	border-radius: 10px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+
+.Heading1 {
+	color: #204D1A;
+	background-color: #C1E6C5;
+}
+
+.Heading2 {
+	color: #241154;
+	background-color: #CEA9F5;
+}
+
+.Heading3 {
+	color: #112554;
+	background-color: #9F9CFF;
+}
+
+h2  {
+	border-radius: 5px;
+	font-family: Georgia;
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	margin-right: 20px;
+}
+
+
+.Title1  {
+	color: #112554;
+	background-color: #C3DCE6;
+}
+
+.Title2  {
+	color: #241547;
+	background-color: #CBB8E3;
+}
+
+.Title3  {
+	color: #112554;
+	background-color: #C4BBFC;
+}
+
+
+h3 {
+	font-family: Georgia;
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	margin-right: 20px;
+}
+
+
+.Subtitle1 {
+	color: #331A4D;
+	background-color: #B6CDD6;
+}
+
+.Subtitle2 {
+	color: #281D40;
+	background-color: #B7AEC2;
+}
+
+.Subtitle3 {
+	color: #141552;
+	background-color: #9491ED;
+}
+
+p {
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+.TextFormat {
+	margin-left: 20px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+
+
+
+
+.Text1 {
+	color: #1A294D;
+	background-color: #B6CDD6;
+}
+.Text2 {
+	color: #281D40;
+	background-color: #B7AEC2;
+}
+.Text3 {
+	color: #1A294D;
+	background-color: #9491ED;
+}
+
+
+.IndentedText {
+	margin-left: 20px;
+	font-size: 18px;
+	font-family: Georgia;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 70px;
+	padding-left: 50px;
+	margin-right: 20px;
+}
+
+
+.Circles3 {
+	font-size: 18px;
+	padding-right: 140px;
+	padding-left: 90px;
+	padding-bottom: 20px;
+	list-style: circle;
+	
+}
+
+.NoBullets {
+	font-size: 18px;
+	padding-right: 40px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	list-style: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+.reference {
+	font-size: 16px;
+	color: white;
+}
+
+.TextHighlight {
+	font-size: 16px;
+	color: #E0E4FF;
+}
+
+.ImageFormat {
+	margin-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 10px;
+	max-width: 100%;
+}

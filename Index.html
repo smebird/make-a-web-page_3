@@ -1,0 +1,931 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+    	SMEBIRD Introduction to Programming (Udacity) 
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<!-- My First Webpage made for the Udacity Course I am taking -->
+  <!-- CONCEPT 1 Begins here -->
+
+	<body>
+	<div class="Container">
+		<div class="Section1 Section1Clr LessScreen AtLeft">
+			<h1 class="Heading1">
+				Lesson 1.1: Basics of the Web and HTML
+			</h1>
+			<div class="TopContents">
+				<div class="AtLeft">
+					<h2 class="Title1">
+						What is the web?
+					</h2>
+					<p class="TextFormat Text1">
+						The web is a bunch of computers that communicate with each other.
+					</p>
+					<h2 class="TextFormat Title1">
+						How does the web work?
+					</h2>
+					<p class="TextFormat Text1">
+						The web has four main components:
+					</p>
+          
+            <ol class="IndentedText Text1">
+              <li>
+                <strong>You:</strong> You want to visit a web page
+              </li>
+              <li>
+                <strong>Your computer plus a Browser:</strong> Your browser makes a request via the internet
+             </li>
+              <li>
+                <strong>The internet:</strong> Sends an HTTP request to a server
+              </li>
+              <li>
+               <strong>Server:</strong> Locates HTML document and sends it to your computer where your web browser interprets and displays it on your screen
+              </li>
+            </ol>
+				</div>
+        <div class="AtRight">
+					<h2 class="Title1">
+						What is a web page?
+					</h2>
+					<p class="TextFormat Text1">
+						A web page is a document written in a language called HTML.  Web browsers read these documents, interpret and display them.  
+					</p>
+					<h2 class="Title1">
+						What is HTML?
+					</h2>
+					<p class="TextFormat Text1">
+						<b>HTML</b> (<b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage) is the heart of the web.
+					</p>
+					<p class="TextFormat Text1">
+						HTML is made up of:
+					</p>
+						<ul class="IndentedText Text1">
+              <li>
+               Text content (What you see)
+              </li>
+              <li>
+              	Markup (What the text looks like)
+              </li>
+              <li>
+              	References to other documents (eg: images, videos, etc...)
+              </li>
+              <li>
+                Links to other pages
+             	</li>
+             	
+            </ul>
+            <ul class="NoBullets Text1">
+              <li>
+               .
+              </li>
+              <li>
+               .
+              </li>
+              <li>
+               .
+              </li>
+            </ul>
+         </div>
+        </div>
+
+			<div class="BottomContents">
+				<div class="AtLeft">
+				<h2 class="Title1">
+						Basic HTML vocabulary you should know:
+				</h2>
+					<h3 class="Subtitle1">
+						Element:
+					</h3>
+					<p class="TextFormat Text1">
+						A structure in HTML that consists of an opening tag, content, and a closing tag.
+					</p>
+					<p class="TextFormat Text1">
+            Elements can be either <em><strong>inline</strong></em> (effecting just the text enclosed by tags), or <em><strong>block</strong></em> (block elements have an invisible box around them with height and width that separates them from any other element). While most Elements have both an <em><strong>opening</strong></em> and <em><strong>closing</strong></em> tag, some Elements use only one tag and are referred to as <em><strong>void.</strong></em>
+          </p>
+					<h3 class="Subtitle1">
+						Tags:
+					</h3>
+					<p class="TextFormat Text1">
+						Tags mark the beginning and end of an Element.  They are made of a less-than symbol, followed by the Element's name, followed by a greater-than symbol.
+					</p>
+					<h3 class="Subtitle1">
+						Attributes and values:
+					</h3>
+					<p class="TextFormat Text1">
+						Attributes follow tags and point to a value. Examples are images and links to other web pages
+					</p>
+				</div>
+				<div class="AtRight">
+					<h2 class="TextFormat Title1">
+						A Couple Other Points to Remember:
+					</h2>
+						<h3 class="Subtitle1">
+							Computers are stupid
+						</h3>
+						<p class="TextFormat Text1">
+							Why?  Because they interpret instruction literally.  If you use the wrong Element name in your opening tag or make a typo, a computer cannot "know" what you intended. A program will only work if the instructions are clear and the grammar correct.
+						</p>
+						<h3 class="Subtitle1">
+							There Is Far Too Much to Remember
+						</h3>
+						<p class="TextFormat Text1">
+							Don't try to memorize every single fact.  Instead, concentrate on  understanding how programming languages work, and rely on the internet to remind you of an Element's name or a particular structure.
+						</p>
+				</div>
+				<div class="AtBottom">
+					<h2 class="TextFormat Title1">
+						And just because it makes me happy...  SPRING!
+					</h2>
+					<span class="ImageFormat">
+            <img src="http://i.imgur.com/UlEFpKM.jpg" alt="Garden" >
+          </span>
+          <span class="ImageFormat">
+            <img src="http://i.imgur.com/kfyCBrQ.jpg" alt="Wisteria" >
+          </span>
+         <p></p>
+				</div>
+			</div>
+		</div>
+
+<!-- CONCEPT 2 begins here -->
+
+  <div class="Section2 Section2Clr FullScreen">
+    <h1 class="Heading2">
+    	Lesson1.2: Creating a Structured Document
+    </h1> 
+    <div>
+      <h2 class="Title2">
+      	Part 1: How Do Websites Work?
+      </h2> 
+        <h3 class="Subtitle2">
+        	VOCABULARY:
+        </h3>
+        <div class="TextFormat Text2">
+          <p >
+            <strong>HTML:</strong> A Language with syntax and rules that provides the structure of the web page
+          </p>
+          <p>
+            <strong>CSS: Provides</strong> the styles seen on the web page
+          </p>
+          <p>
+            <strong>Javascript:</strong> Allows actions/changes on the web page
+          </p>
+         <p>
+          <strong>DOM</strong> (Document Object model): The standard convention for interacting with HTML
+         </p>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title2">
+      	Dig Deep into Code:
+      </h2>
+        <div class="TextFormat Text2">
+          <p>
+          	<strong>How to open Developer's Tools in Chrome:</strong>
+          </p>
+          <ol class="IndentedText">
+            <li>
+              Click on the symbol in the top right corner made of three lines (looks like a hamburger)
+            </li>
+            <li>
+            	Choose "More Tools" from the menu
+            </li>
+            <li>
+              Choose "Developer Tools." A panel will open showing the structure of the web page you are on.  This is not the code, but how the browser interprets it.
+            </li>
+            <li>
+            	Click on the triangles to reveal hidden level
+            </li>
+            <li>
+            	This is the Tree-like structure of HTML
+            </li>
+          </ol>
+        </div> 
+        <div class="TextFormat Text2">
+          <p>
+            For two good articles about Tree-like Structure, check out the following Wikipedia pages:
+            <span class="ImageFormat">
+              <a href="http://en.wikipedia.org/wiki/Tree_structure" class="reference" >Tree Structure</a>
+            </span>
+            <span class="ImageFormat">
+              <a href="http://en.wikipedia.org/wiki/Tree_(data_structure)" class="reference">Tree (Data Structure)</a>
+            </span>
+          <p></p>
+          <p>
+            Once you know the language, you can look at any HTML code and understand a great deal about how it will look as a web page.  Likewise, you can view any web page and know what the underlying code looks like.
+          </p>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title2">
+      	Everything in HTML is a box:
+      </h2>
+        <div class="TextFormat Text2">
+          <ul class="IndentedText">
+            <li>
+             We organize code by determining the placement and size of the largest "boxes" first, and defining smaller and smaller boxes into those spaces.
+            </li>
+            <li>
+            	Every "box" is defined by the tag "div."
+            </li>
+            <li>
+            	"Divs" can be nestled endlessly within other "Divs."
+            </li>
+         </ul>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title2">
+      	HTML works with CSS:
+      </h2>
+        <div class="TextFormat Text2">
+          <p>
+          <strong>Check out the following line:</strong>
+          </p>
+            <ul class="NoBullets">
+              <li>
+              	&lt;h1 class="article"&gt;
+              </li>
+            </ul>
+          <p>
+           	In this example, the word "class" is an attribute. It allows the user to add CSS style choices to every h1 element with the value "article."
+          </p>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title2">
+      	Notes on Learning:
+      </h2>
+        <p class="TextFormat Text2">
+        	As this course proceeds, we will be moving somewhere on a continuum from Novice to Expert in many different areas.  To do this, we will constantly stop to reflect on what we have learned, and we will practice as often as possible.
+        </p>
+        <p></p>
+    </div>
+
+    <!-- I need to figure out how to get the correct background color for the two images that I am placing here.  They keep appearing with the background color from section 1, no matter what I do! -->
+    <div class="TextFormat Text2"> 
+      <span class="ImageFormat">
+          <img src="http://i.imgur.com/UgllaJi.jpg" alt="Tulips" >
+      </span>
+      <span class="ImageFormat">
+          <img src="http://i.imgur.com/tFr7FvM.jpg"  alt="Azealias" >
+      </span>
+    </div>
+    
+  </div>
+
+
+<!-- CONCEPT 3 Begins Here -->
+
+  <div class="Section3 Section3Clr LessScreen AtLeft">
+    <h1 class="Heading3">
+    	lesson1.3: Adding CSS and HTML Structure
+    </h1> 
+    <div>
+      <h2 class="Title3">
+        Use CSS to avoid unnecessary repetition
+      </h2>
+        <div class="TextFormat Text3">
+          <p class="TextHighlight">
+            (<em>The following has been taken from the web page of <strong>loeakaodas</strong>, with permission. View original code at: <a href="http://codepen.io/loeakaodas/pen/VLKJXY" class="reference">Student Project</a>)</em>
+          </p>
+            <ul class="Nobullets">
+              <li>
+              	By utilizing CSS you can reduce the complexity &amp; repetition of having to edit individual sections of HTML in order to change how it looks in the browser. Instead you just apply the desired style with CSS &amp; as a result it can be easily changed whenever necessary  without having to edit the HTML extensively or at all.
+              </li>
+            </ul>
+          <p class="TextHighlight">
+            (<em>The following has been taken from the goggle+ entry of <strong>Adriana Gomez Borda</strong>. View original code at: <a href="https://plus.google.com/" class="reference">Student Conversation</a>)</em>
+          </p>
+          	<ul class="IndentedText">    
+              <li> 
+                Faster Websites: fewer repeated styles in CSS result in smaller file sizes, and thus faster downloading of those resources. 
+              </li>
+            </ul>
+          <p class="Text3">
+            Avoiding repetition is a <strong>time saver</strong> and helps reduce the potential of <strong>code errors</strong>: The less a programmer has to type, the lower the chances are of making a typo or other mistake!  
+          </p>
+          <p class="Text3">
+            For additional ease in editing, the CSS can be organized into separate files.
+          </p>
+          	
+        </div>
+    </div>
+
+    <div>
+      <h2 class="Title3">
+      	How CSS works
+      </h2>
+        
+        <h3 class="Subtitle3">
+        	First you need to link the CSS to your HTML:
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+            	<strong>Instuctions:</strong>:
+            </p>
+            <ol class="IndentedText">
+              <li>Type &lt;!DOCTYPE HTML&gt;</li>
+              <li>Create &lt;head&gt; tabs</li>
+              <li>Add a &lt;link&gt; tab inside the "head" tab (Sublime finishes tags when you type the first letter).</li>
+            </ol>
+          </div>  
+    </div>
+    <div>
+      <h2 class="Title3">
+      	What is CSS?
+      </h2>
+        <h3 class="Subtitle3">
+        	CSS = "Cascading Style Sheets"
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              <strong>Cascading </strong>refers to the process of moving from the most general property to the most specific property in your document.
+            </p>
+            <p>
+              The <strong>styles</strong> used in your project can be broken into separate CSS files or <strong>"sheets"</strong> to aid in organizing.
+            </p>
+            <p>
+              CSS properties, or rules, work in a hierarchy, much as laws function in a country:
+            </p>
+              <ol class="IndentedText">
+                <li>
+                  Federal = Document wide rules: properties applied to the highest level &lt;div&gt; block
+                </li>
+                <li>
+                	State = Properties applied to sub &lt;div&gt; blocks
+                </li>
+                <li>
+               		Municipal = Properties applied to sub-sub &lt;div&gt; blocks
+                </li>
+                <li>
+                	Home = Properties applied to individual 	elements
+                </li>
+              </ol>
+          </div>
+        <h3 class="Subtitle3">
+          Cascading depends upon <em>INHERITANCE</em>:
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              <em>INHERITANCE</em> means that a property assigned to an element will be applied to all its descendents (children), unless<br> overwritten by a more local property.
+            </p>
+            <p>
+              Not all propterties are heritable. Refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a> to find out whether a property is, or is not.
+            </p>
+          </div>
+        <h3 class="Subtitle3">
+        	To add a style choice, we create a <em>SELECTOR</em>:
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              The <em>SELECTOR</em> we choose will determine to which elements a particular style is applied.
+           	</p>
+            <p>
+              To see a list of available selectors, and the correct syntax for each, please refer to the <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a>
+           	</p>
+            <p>
+              To see a list of available properties, and the correct syntax for each, please refer to the <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a>
+            </p>
+          </div>
+        <h3 class="Subtitle3" >
+        	Remember!
+        </h3>
+        <div class="TextFormat Text3">
+          <ol class="IndentedText">
+            <li>
+              Changing the visual properties of an element only changes how it is displayed, not what kind of element it is.
+            </li>
+            <li>
+              Choose type of element (tag) depending on what the element's purpose is.  That is, use a tag that matches function!
+            </li>
+            <li>
+            	When a tag changes, the box and the font can change as well
+            </li>
+         </ol>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title3">
+      	Understanding the Box Model
+      </h2>
+        <h3 class="Subtitle3">
+        	HTML boxes contain the following:
+        </h3>
+          <div class="TextFormat Text3">
+            <ol class="IndentedText">
+             <li>Margin</li>
+              <li>Border</li>
+              <li>Padding</li>
+              <li>Content</li>
+            </ol>
+            <p>
+            	You can see an element's box in Dev Tools by clicking the Computed tab
+            </p>
+          </div>
+        <h3 class="Subtitle3">
+          At the center of this box is the <strong>Content</strong>.
+        </h3>
+          <div class="TextFormat Text3">
+            <ul class="IndentedText">
+              <li>
+              	The image or text that appears on the website
+              </li>
+              <li>
+                Consider the content the nucleus: It sits at the center and the surrounding layers protect it, so that other items don't overlap it or sit too close, making the website visually unappealing.
+              </li>
+            </ul>
+          </div>
+        <h3 class="Subtitle3">
+        	Next is the <strong>Padding</strong>.
+        </h3>
+          <div class="TextFormat Text3">
+            <ul class="IndentedText">
+              <li>
+              	The Padding clears the area around the Content.
+              </li>
+              <li>
+              	It is affected by the background-color of the box 
+              </li>
+              <li>
+              	Think of it as the space inside the box that protects the Content directly.
+              </li>
+            </ul>
+          </div>
+        <h3 class="Subtitle3">
+        	Next is the <strong>Border</strong>.
+        </h3>
+          <div class="TextFormat Text3">
+            <ul class="IndentedText">
+              <li>
+              	The Border goes around both the Padding and the Content
+              </li>
+              <li>
+              	It is inherited from the color property of the box. 
+              </li>
+            </ul>
+          </div>
+        <h3 class="Subtitle3">
+          Last, the out layer is the <strong>Margin</strong>.
+        </h3>
+          <div class="TextFormat Text3">
+            <ul class="IndentedText">
+              <li>
+              	The Margin clears an area around the Border
+              </li>
+              <li>
+              	It has no background-color. It is completely transparent. 
+              </li>
+              <li>
+              	Think of it as the space between boxes 
+              </li>
+            </ul>
+          </div>
+    </div>
+    <div>
+      <h2 class="Title3">
+      	Calculating Box Size
+      </h2>
+        <h3 class="Subtitle3">
+        	Default = Sum of Border, Padding and Content
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              To make the calculation easier, we put the following code into our CSS file:
+            </p>
+              <ol class="IndentedText">
+               <li>* { </li>
+                <li>box-sizing: border-box;</li>
+                <li> } </li>
+              </ol>
+            <p>
+              Now, the calculation of the box includes both the border and the padding, so that it's easier to make layouts.
+            </p>
+            <p>
+              You just set the width of the overall box, and no matter how you tweak the padding and border layers, the size of the box will always stay the same.
+            </p>
+            <p>
+            	The CSS must include browser-specific prefixes:
+            </p>
+              <ul class="IndentedText">
+                <li>-webkit-box-sizing: border-box;</li>
+                <li>-moz-box-sizing: border-box; </li>
+                <li>-ms-box-sizing: border-box </li>
+                <li>box-sizing: border-box</li>
+              </ul>
+            <p>
+              You can set the size of your box layers in pixels or in percentages:
+            </p>
+              <ul class="IndentedText">
+                <li>
+                	% changes the box as the screen size changes
+                </li>
+                <li>
+                  Pixel sets the image to one size, regardless of device. This can lead to a bad user experience
+                </li>
+              </ul>
+            <p>
+              You can set max-width, so that an element can get smaller, but not larger than a set value.  Max-width won't change layout.
+            </p>
+          </div>
+    </div>
+    <div>
+      <h2 class="Title3">
+      	Positioning Elements
+      </h2>
+        <h3 class="Subtitle3">
+        	This is a complicated concept
+        </h3>
+        <h3 class="Subtitle3">
+        	Let's look at one display property: flex.
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              Flex allows you to layout a line and distribute space among items in a container, or div.
+            </p>
+            <p>
+              The tag "div" is set, by default, to use the entire width of a page 
+            </p>
+            <p>
+              Flex overrides this behavior to allow divs to appear next to each other.
+            </p>
+        </div>
+    </div>
+    <div>
+      <h2 class="Title3">
+      	Dev Tools
+      </h2>
+        <h3 class="Subtitle3">
+        	Developer Tools can help speed up projects
+        </h3>
+          <div class="TextFormat Text3">
+            <p>
+              By first testing changes in Dev Tools, you can easily see whether a particular change is advantageous.
+            </p>
+            <p> 
+            	Use an-online code validator to locate code errors.
+            </p>
+            <p>
+              Once validated, you can place icons on your webpage as proof that your webpage complies with standards.
+            </p>
+          </div>
+        
+    </div>
+    <div>
+      <h2 class="Title3">
+      	How to move from Mockup to Computer:
+      </h2>
+        <h3 class="Subtitle3">
+        	Code, Test, Refine
+        </h3>
+        	<div class="TextFormat Text3"> 
+            <p>
+             	By first testing changes in Dev Tools, you can easily see whether a particular change is advantageous.
+            </p>
+              <ul class="IndentedText">
+                <li>
+                	First get structure from a design by visually "boxifying" it
+                </li>
+                <li>Look for natural boxes </li>
+                <li>
+                	Choose sizes for boxes and work out their positions on the screen 
+                </li>
+                <li>
+                	Next, work on placing appropriate tags where they belong 
+                </li>
+                <li>
+                	Look for repeating styles and semantic elements:
+                </li>
+                <li>
+                    Move to smaller and smaller details to polish your project
+                </li>
+                <li>View your work in multiple browsers</li>
+              </ul>
+           </div> 
+    
+    </div>
+
+                <p class="TextFormat Text3"></p>
+                <p class="TextFormat Text3"></p>
+                <p class="TextFormat Text3"></p>
+              
+  </div>
+
+
+    <!-- ****************Stage 2 Section of the course begins here************* -->
+
+     <!-- Stage 2 Work Session 1 begins here --> 
+
+  <div class="Section1 Section1Clr LessScreen AtRight" >
+    <h1 class="Heading1">
+    	Lesson 2.1: Introduction to Serious Programming
+    </h1>   
+    <div>
+      <h2 class="Title1">
+      	What is Computer Science?
+      </h2>
+        <p class="TextFormat Text1">
+          Computer Science is about how to solve problems by breaking them into smaller pieces and then mechanically and precisely describing the sequence of steps that you would use to solve each piece... and those steps can be executed by a computer.
+        </p>
+    </div>
+    <div>
+      <h2 class="Title1">
+      	What is a computer?
+      </h2>
+        <p class="TextFormat Text1">
+         A universal machine that we can program to do any computation. Its power lies in doing things very fast: billions of instructions per second.
+        </p>
+      <h2 class="Title1">
+      	What is a program?
+      </h2>
+        <div class="TextFormat Text1">
+          <p>
+            A very precise sequence of steps that tells the computer what to do.  Anything we can write a program for, we can make a computer do.
+          </P>
+          <p>
+            To learn computing, we need to learn a programming language.
+          </p>
+        </div>
+      <h2 class="Title1">
+      	What is a programing language?
+      </h2>
+        <p class="TextFormat Text1">
+          A vocabulary and set of grammatical rules for instructing a computer to perform specific tasks.
+        </p>
+        <h3 class="Subtitle1">
+          Programming languages come  in three general forms:
+        </h3>
+          <div class="TextFormat Text1">
+            <p>
+              Machine language:
+            </p>
+              <ol class="IndentedText">
+                <li>
+                  Written in numbers; the only language the computer really understands
+                </li>
+                <li>
+                  Platform specific.  Machine language cannot be used on different kinds of computers.
+                </li>
+                <li>The fastest language to process</li>
+              </ol>
+            <p>
+              Assembly language:
+            </p>
+              <ol class="IndentedText">
+                <li>
+                 Uses the same instructions as in Machine Language, but keywords and variables have names rather than numbers only, making it easier to read and write.
+                </li>
+                <li>
+                	Like machine language, it is platform specific
+                </li>
+                <li>
+                  Assembly language must be translated into the machine language of a CPU by a program called an assembler.
+                </li>
+                <li>Very fast language to process</li>
+              </ol>
+            <p>
+              High Level Language:
+            </p>
+              <ol class="IndentedText">
+                <li>
+                  The closest to human language, it is easier to read, write and maintain.
+                </li>
+                <li>
+                  Platform independent: it can be used on any platform.
+                </li>
+                <li>
+                  Must be put through an <strong>interpreter</strong> or a <strong>compiler</strong> that translates the human-like language into the machine language of numbers.
+                </li>
+                <li>Slower language to process</li>
+              </ol>
+
+
+            <p> 
+              See  <a href="http://www.webopedia.com/TERM/P/programming_language.html" class="reference">webopedia</a> for more information.
+            </P>
+          </div>
+
+      <h2 class="Title1">
+        Python is a High Level Program with <strong><em>advantages</em></strong>:
+      </h2>
+      <h3 class="Subtitle1">
+        Python is easy to use:
+      </h3>
+          <p class="TextFormat Text1">
+            It's the closest to human language, so easy to use that it's been called "programming at the speed of thought." Python programs are shorter and take less time to create than programs in many other popular languages.<!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page3. 2010 Course Technology, a part of Cengage Learning.-->
+          </p>
+      <h3 class="Subtitle1">
+        Python is a "Glue" Language:
+      </h3>
+          <p class="TextFormat Text1">
+            Python can be integrated with other languages such as C, C++ and Java.  This means that a programmer can take advatage of work already done in another language while using Python.  It also means that the strengths of other languages, such as the extra speed that C or C++ might offer.<!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page4. 2010 Course Technology, a part of Cengage Learning.-->
+          </p>
+      <h3 class="Subtitle1">
+        Python has a strong community:
+      </h3>
+          <p class="TextFormat Text1">
+            Python has the "Python Tutor mailing list, a more informal way for beginning programmers to ask questions The list is at: <a href="https://mail.python.org/mailman/listinfo/tutor" class="reference">Python Tutor</a>.<!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page4. 2010 Course Technology, a part of Cengage Learning.-->
+          </p>
+      <h3 class="Subtitle1">
+        Python is also an interpreter:
+      </h3>
+        <P class="TextFormat Text1">
+          It translates our code into machine language and that code can be run on any platform.
+        </P>
+
+      <h2 class="Title1">
+        Why don't we write programs in human languages?
+      </h2>
+      <h3 class="Subtitle1">
+        Natural (human) Languages are:
+      </h3>
+        <div class="TextFormat Text1">
+          <ul class="Bullets1">
+            <li>
+             Ambiguous: Words and sentences are open to interpretation. (Example: what is the meaning of bi-weekly -- twice a week, or once every two weeks?).
+            </li>
+          	<li>
+              Verbose: Natural languages use too many words and code made with them would be too bulky and slow to process.
+            </li>
+          </ul>
+        </div>
+      <h2 class="Title1">
+        How do programming languages work?
+      </h2>
+      <h3 class="Subtitle1">
+        Like natural (human) languages, programming languages require Grammar:
+      </h3>
+        <div class="TextFormat Text1">
+          <p>
+            <strong>Grammar:</strong>
+          </p>
+          <p>
+            A set of production rules that describe how to form strings from the language's alphabet that are valid according to the language's syntax.
+          </p>
+            <ul class="IndentedText">
+              <li>
+                String: A sequence of characters
+              </li>
+              <li>
+                Syntax: The combinations of symbols that are considered to be a correctly structured document or fragment in that language.
+              </li>
+            </ul>
+        </div>
+          <p class="TextFormat">
+            See the following Wikipedia pages for more information: <a href="http://en.wikipedia.org/wiki/Formal_grammar" class="reference">Formal Grammar</a>
+          </p>
+      <h2 class="Title1">
+        How is human, or natural, language turned into programming language?
+      </h2>
+      <h3 class="Subtitle1">
+        Using Replacement Grammars, or <em>Context-Free Grammars</em>, such as the Backus-Naur Form. 
+      </h3>
+        <div class="TextFormat Text1">
+          <p>
+            <strong>Replacement Grammars:</strong>
+          </p>
+          <p>
+            A notation used to describe each part of a language using agreed upon rules. A rule might look like the following:
+          </p>
+            <ul class="NoBullets">
+              <li>
+                &lt;Sentence&gt; ::= &lt;subject&gt; &lt;verb&gt; | &lt;subject&gt; &lt;verb> &lt;object&gt;
+              </li>
+              <li>
+                                                .
+              </li>
+              <li>
+                (Which would be translated as: "A sentence consists of a subject and a verb <strong>OR </strong> a subject, verb and an object.")
+              </li>
+            </ul>
+          <p>
+            In a sequence of steps, or <strong>derivations</strong>, each non-terminal (the words in &lt; &gt;) are gradually replaced by a terminal (such as &lt;verb &gt; replaced with the terminal "jump")
+          </p>
+        </div>
+        <div class="TextFormat Text1">
+          <p>
+            Replacement Grammars allow us to describe an infinitely large language with a small set of rules.
+          </p>
+          <p>
+            Languages made with Replacement Grammars are extremely precise!
+          </p>
+          <p>
+            Languages like <strong>Python</strong>, made with Replacement Grammars, are far more strict than natural languages. Rules must be followed exactly, or the instructions will not be understood or carried out.            
+          </p>
+          <p>
+            For instance, when writing mathematical expressions in Python, you cannot mistype any part of the expression.            
+          </p>
+          <ul class="NoBullets">
+              <li>
+                "2 + 2 _ 3" might be understood by another person as a typo for "2 + 2 + 3", but the Python interpreter will see it as an error.    
+              </li>
+          </ul>
+         </div>     
+          <p class="TextFormat">
+            This gets complicated, so do yourself a favor: Check out the Wikipedia article: <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" class="reference">Backus-Naur Form</a>
+          </p>
+          <p class="TextFormat Text1">
+            And just because she's awesome, check out this conversation between David Letterman and Rear Admiral Grace Hopper: <a href="http://www.myvidster.com/video/425708/Grace_Hopper_on_Letterman" class="reference">Nanostick</a>
+          </p>
+    </div>
+  </div>  
+
+         <!-- Stage 2 Work Session 2 begins here --> 
+
+         <!-- Much of the entries on Variables are a rewording of the Wikipedia article on this subject.  -->
+     
+  <div class="Section2 Section2Clr FullScreen AtBottom">
+    <h1 class="Heading2">
+    	Lesson 2.2: Variables and Strings
+    </h1>   
+    <div>
+      <h2 class="Title2">
+      	What is a Variable?
+      </h2>
+        <p class="TextFormat Text2">
+          In computer programming the word <strong>variable</strong> denotes a storage location containing some <strong>value</strong> that is paired with an <strong>identifier</strong> (a symbolic name).  
+        </p>
+    </div>
+    <div>
+      <div class="TextFormat Text2">
+        <p>
+         	The value, or <strong>expression</strong>, that has been assigned to an identifier can be changed.  This does not actually delete the former value from storage, but it is no longer paired to its original identifier.
+        </p>
+        <p>
+         	If unpaired values are left in storage, programs can suffer "memory leaks" as storage reaches capacity, eventually leading to a program crash.  There are <strong>Garbage Collection Modules</strong> available  for Python that can be used to clear cluttered storage. 
+        </p>
+      </div>
+      <h2 class="Title2">
+      	Python syntax and standard conventions:
+      </h2>
+      <div class="TextFormat Text2">
+        <p>
+         	In Python, the syntax for assigning a value to an identifier is as follows:
+        </p>
+        	<ul class="NoBullets">
+        		<li>
+         			name = expression (where <em>name</em> is the <strong>identifier</strong> and <em>expression</em> is the <strong>value</strong>.)
+         		</li>
+        	</ul>
+      </div>
+      <div class="TextFormat Text2">
+        <p>
+         Values can be either text characters, referred to as "strings," or numbers, referred to either as "integers" (without decimal points) or as "floating" (with decimal points)
+        </p>
+      </div>
+      <div class="TextFormat Text2">
+        <p>
+         In Python, any value/expression that is enclosed in quotation marks, whether single or double, will be interpreted as a string, as in the following examples:
+        </p>
+        	<ul class="NoBullets">
+        		<li>
+         			myName = "smebird" 
+         		</li>
+         		<li>
+         			someNumbers = '0123456789' 
+         		</li>
+         		<li>
+         			text_plusNumbers = '0123456789 and "smebird"' 
+         		</li>
+        	</ul>
+    	</div>
+    	<div class="TextFormat Text2">
+        <p>
+         To use Python to do any calculations, numbers are entered as a value with no quotation marks, as in the following examples:
+        </p>
+        	<ul class="NoBullets">
+        		<li>
+         			myAddition = 1 + 2 + 3000000000000 
+         		</li>
+         		<li>
+         			myMultiplication = 1234 * 4321 
+         		</li>
+         		<li>
+         			myExponents = 3**9 
+         		</li>
+        	</ul>
+      </div>
+    	<div class="TextFormat Text2">
+        <p>
+         	The convention for identifiers is to start with a lowercase character.  You cannot begin an identifier with a number.
+        </p>
+        <p>
+         	Python will print strings in a different color, making it is easy to catch errors, like a forgotton end quote.
+        </p>
+    	</div>
+  </div>
+  </div>
+  
+  </div>
+  </body> 
+</html>
+    
+ 
+
+
+	
+
+  
